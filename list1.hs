@@ -17,6 +17,7 @@ facs = sum' $ fac 1 where
   sum' n = (n `mod` 10)  + sum' (n `div` 10)
 
 
+asdf ::  Integer
 asdf = aux 0 limit  where
   aux i k | k == 1 = i
 	  | even k = aux (i+1) (k `div` 2)
