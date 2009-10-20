@@ -118,3 +118,12 @@ instance Arity b => Arity ( a -> b )  where
 zipW n = n. repeat 
 zero = id
 suc n fs = n .  zipWith ($) fs
+
+class FullArr a where
+   farity :: a -> Int
+instance FullArr a where
+   farity = const 0
+
+instance (FullArr b, FullArr a ) => FullArr (a -> b) where
+   farity f = (k + ). succ . farity $ f ( undefined :: a)
+    where k = farity (undefined :: a)
