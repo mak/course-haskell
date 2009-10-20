@@ -8,6 +8,8 @@
 
 module List3 where
 
+import Control.Arrow
+
 -- zad0
 data Z = Z  
 data S a = S a
@@ -80,6 +82,8 @@ instance MapT a c  => MapT' [()] a [c]  where
 class Age a n | a -> n where
    age :: a -> n
 
+zipWN :: (ZipWith b  a t, IsFun a b ) => a  -> t
+zipWN = uncurry appMany . (isFun &&& repeat ) 
 data T
 data F 
 
