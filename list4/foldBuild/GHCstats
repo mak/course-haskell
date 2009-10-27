@@ -1,0 +1,100 @@
+-- FB.hs
+==================== FloatOut stats: ====================
+5 Lets floated to top level; 0 Lets floated elsewhere; from 7 Lambda groups
+
+
+
+==================== FloatOut stats: ====================
+3 Lets floated to top level; 0 Lets floated elsewhere; from 13 Lambda groups
+
+
+
+==================== Grand total simplifier statistics ====================
+Total ticks:     567
+
+114 PreInlineUnconditionally
+167 PostInlineUnconditionally
+54 UnfoldingDone
+11 RuleFired
+    1 +#
+    1 SC:$wgo0
+    1 SPEC Main.sumL [GHC.Types.Int]
+    1 enumFromToL -> fused
+    2 fold/build -> rule
+    1 foldr2/right
+    1 mapL -> fused
+    1 x# *# 1#
+    2 zipL -> fused
+9 LetFloatFromLet
+178 BetaReduction
+2 CaseOfCase
+28 KnownBranch
+4 FillInCaseDefault
+17 SimplifierDone
+
+
+-- FBDir.hs
+
+==================== FloatOut stats: ====================
+3 Lets floated to top level; 0 Lets floated elsewhere; from 1 Lambda groups
+
+
+
+==================== FloatOut stats: ====================
+2 Lets floated to top level; 0 Lets floated elsewhere; from 4 Lambda groups
+
+
+
+==================== Grand total simplifier statistics ====================
+Total ticks:     396
+
+85 PreInlineUnconditionally
+106 PostInlineUnconditionally
+45 UnfoldingDone
+4 RuleFired
+    1 SPEC Main.enumFromTo' [GHC.Types.Int]
+    1 fold/build
+    1 zip
+    1 zipList
+8 LetFloatFromLet
+123 BetaReduction
+2 CaseOfCase
+21 KnownBranch
+1 CaseIdentity
+1 FillInCaseDefault
+17 SimplifierDone
+
+--FBDir.hs
+
+
+==================== FloatOut stats: ====================
+4 Lets floated to top level; 0 Lets floated elsewhere; from 1 Lambda groups
+
+
+
+==================== FloatOut stats: ====================
+1 Lets floated to top level; 0 Lets floated elsewhere; from 2 Lambda groups
+
+
+
+==================== Grand total simplifier statistics ====================
+Total ticks:     359
+
+78 PreInlineUnconditionally
+82 PostInlineUnconditionally
+35 UnfoldingDone
+8 RuleFired
+    1 eftInt
+    1 eftIntList
+    2 fold/build
+    1 foldr2/left
+    1 map
+    1 repeat
+    1 zip
+9 LetFloatFromLet
+130 BetaReduction
+1 CaseOfCase
+16 KnownBranch
+15 SimplifierDone
+
+
