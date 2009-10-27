@@ -1,0 +1,66 @@
+./myFB +RTS -sstderr 
+      15,609,360 bytes allocated in the heap
+          13,264 bytes copied during GC
+       4,205,032 bytes maximum residency (4 sample(s))
+       3,138,248 bytes maximum slop
+               9 MB total memory in use (2 MB lost due to fragmentation)
+
+  Generation 0:    10 collections,     0 parallel,  0.00s,  0.00s elapsed
+  Generation 1:     4 collections,     0 parallel,  0.00s,  0.00s elapsed
+
+  INIT  time    0.00s  (  0.00s elapsed)
+  MUT   time    0.02s  (  0.02s elapsed)
+  GC    time    0.01s  (  0.01s elapsed)
+  EXIT  time    0.00s  (  0.00s elapsed)
+  Total time    0.02s  (  0.03s elapsed)
+
+  %GC time      28.6%  (33.3% elapsed)
+
+  Alloc rate    936,655,265 bytes per MUT second
+
+  Productivity  71.4% of total user, 58.9% of total elapsed
+
+./myFB2 +RTS -sstderr 
+      23,853,160 bytes allocated in the heap
+          13,240 bytes copied during GC
+       4,195,560 bytes maximum residency (4 sample(s))
+       2,103,408 bytes maximum slop
+               9 MB total memory in use (2 MB lost due to fragmentation)
+
+  Generation 0:    26 collections,     0 parallel,  0.01s,  0.01s elapsed
+  Generation 1:     4 collections,     0 parallel,  0.00s,  0.00s elapsed
+
+  INIT  time    0.00s  (  0.00s elapsed)
+  MUT   time    0.02s  (  0.02s elapsed)
+  GC    time    0.01s  (  0.01s elapsed)
+  EXIT  time    0.00s  (  0.00s elapsed)
+  Total time    0.03s  (  0.04s elapsed)
+
+  %GC time      44.4%  (36.4% elapsed)
+
+  Alloc rate    1,431,246,849 bytes per MUT second
+
+  Productivity  55.6% of total user, 44.3% of total elapsed
+
+./listFB +RTS -sstderr 
+      12,251,832 bytes allocated in the heap
+          11,032 bytes copied during GC
+       2,107,896 bytes maximum residency (3 sample(s))
+       1,057,464 bytes maximum slop
+               5 MB total memory in use (1 MB lost due to fragmentation)
+
+  Generation 0:    13 collections,     0 parallel,  0.01s,  0.01s elapsed
+  Generation 1:     3 collections,     0 parallel,  0.00s,  0.00s elapsed
+
+  INIT  time    0.00s  (  0.00s elapsed)
+  MUT   time    0.01s  (  0.02s elapsed)
+  GC    time    0.01s  (  0.01s elapsed)
+  EXIT  time    0.00s  (  0.00s elapsed)
+  Total time    0.02s  (  0.03s elapsed)
+
+  %GC time      50.0%  (34.8% elapsed)
+
+  Alloc rate    1,225,305,730 bytes per MUT second
+
+  Productivity  50.0% of total user, 36.2% of total elapsed
+
