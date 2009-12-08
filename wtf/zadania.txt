@@ -1,0 +1,27 @@
+
+1) Czasami funktor to za malo chcielibysmy moc sie przejsc po strukturach
+   z parametryzowanych dwoma typami, zaproponuj odpowiednia abstrakcje opisujaca taki funktor
+   (dokaldniej to bifunktor) i zaimplementuj pare instancji, w szczegolnosci pokaz jak za
+    pomoca bifunktora zaimplemnetowac zwykly funktor
+
+2) Kozystajac z interfejsu jaki oferuje Applicativie i Alternative napisz prosta 
+   biblioteke kombinatorow parsujacych wykorzystaj zalete <*> nad >>= w przekazywaniu bledow
+
+3) Zaproponuj klase Monad odpowiadajaca kategorycznej definicji, udowodnij rownowaznosc tych 
+   dwoch klas
+
+4) Bazujac na dualnosci pomiedzy Functor a CoFuntor zaproponuj dowlna istancje tego drugiego
+
+5) Przypomnijmy ze typy indukcyjne definiujemy jako najmniejszy punkt staly pewnego funktora
+   natomiast typu co-indukcyjne jako najwiekszy punkt staly pewnego funktora, wyposazony w 
+   ta wiedze zaimplentuj jakas Comonade 
+
+6) Uczyn Kleisli instancja Category (skorzystaj z kompozycji Kleisli'ego >=> )
+   pokaz ze Kleisli jest strzalka, tak samo uczyn z (->)
+
+7) definujemy w nastepujacy sposob klase ArrowApply
+   class Arrow (~>) => ArrowApply (~>) where
+    app :: (b ~> c,b) ~> c 
+
+   pokaz ze majac taka operacje dowolna instacja ArrowApply jest monada
+

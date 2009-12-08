@@ -1,0 +1,20 @@
+Z gory przepraszam za jakosc tego wystapienia niestety wiekszosc rzeczy ktore bylem w statnie 
+przygotwac wymagaly albo czasu albo znajomosci pewnych mechanizmow tudziez podstaw z teorii 
+kategorii.
+
+Zaczeniemy zatem od podstaw, postaram sie nakreslic pewne zaleznosci miedzy 
+najpopularniejszymi klasami przewijacymi sie przez haskellowy kod.
+Podazajac za wyznaczonym standartem wszystkie pliki to tzw literate Haskell
+wiec smialo mozna to ladowac do ghci i nieprzejmowac sie brakiem komentarzy ;]
+
+Mam nadzieje ze brak znakow diakrytycznych nikomu nie przeszkadza, nie wspominajac juz 
+o mojej pozalowania godnej znajomosci ortografi jezyka poloskiego.
+
+troche linkow:
+The Typeclassopedia, Brent Yogey (The.Monad.Reader 13)
+FUNCTIONAL PEARL Applicative programming with effects, CONOR MCBRIDE, ROSS PATERSON
+Category-Extras (http://hackage.haskell.org/package/category-extras-0.53.5)
+Comonads in Everyday life (http://fmapfixreturn.wordpress.com/2008/07/09/comonads-in-everyday-life/)
+The Essence of Dataflow Programming, Tarmo Uustalu1 and Varmo Vene
+Programming with Arrows, John Hughes
+i wiele innych, bardzo duzo linkow jest w referncjach do typeclassopedii
